@@ -96,8 +96,6 @@ def plot_road(times:list, road_states:list):
         ax.set_xlim(min(times), max(times))  # Set the x-axis limits automatically
         ax.autoscale(enable=True, axis='y')  # Automatically scale the y-axis
 
-
-# Main function
 def main():
     # Example test data
     times = np.linspace(0, 10, 100)  # Example time data
@@ -109,8 +107,6 @@ def main():
     # Call the plot function
     plot_results(times, positions, speeds, accelerations, actuator_forces)
 
-
-# Ensure this runs only when executed as a script
 if __name__ == '__main__':
     main()
 
